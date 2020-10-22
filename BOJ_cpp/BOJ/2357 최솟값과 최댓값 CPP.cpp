@@ -20,29 +20,25 @@ typedef struct node{
 }node;
 
 void input(vector<int>* arr, vector<pair<int, int>>* questions);
-pair<int, int> getSegmentTree(int start, int end, int index, pair<int, int>* tree, vector<int>* arr);
-pair<int, int> getMinMax(int left, int right, int start, int end, int index, pair<int, int>* tree);
+node* getSegmentTree(int start, int end, vector<int>* arr);
+pair<int, int> getMinMax(int left, int right, int start, int end, node* root);
 
 int main()
 {
 	vector<int> arr;
-	pair<int, int>* tree;
 	vector<pair<int, int>> question;
 	input(&arr, &question);
 
 
-	tree = new pair<int, int>[arr.size() * 5];
 
 
 
-	getSegmentTree(0, arr.size() - 1, 1, tree, &arr);
-	cout << endl << endl;
+	node* root = getSegmentTree(0, arr.size() - 1, &arr);
+
 	for (int i = 0; i < question.size(); i++)
 	{
-		if (i != 0)
-			cout << '\n';
-		pair<int, int> print = getMinMax(question[i].first, question[i].second, 0, arr.size() - 1, 1, tree);
-		cout << print.first << " " << print.second;
+		pair<int, int> print = getMinMax(question[i].first, question[i].second, 0, arr.size() - 1, root);
+		cout << print.first << " " << print.second << "\n";
 	}
 }
 
@@ -67,28 +63,32 @@ void input(vector<int>* arr, vector<pair<int, int>>* questions)
 	}
 }
 
-pair<int, int> getSegmentTree(int start, int end, int index, pair<int, int>* tree, vector<int>* arr)
+node* getSegmentTree(int start, int end, vector<int>* arr)
 {
 	if (start == end)
 	{
-		tree[index].first = arr->at(start);
-		tree[index].second = arr->at(start);
+		node* ret = new node();
+		ret->max = arr->at(start);
+		ret->min = arr->at(start);
+		ret->left = NULL;
+		ret->right = NULL;
 
-		return tree[index];
+		return ret;
 	}
 
+	node* ret = new node();
+	node* left = getSegmentTree(start, (start + end) / 2, arr);
+	node* right = getSegmentTree((start + end) / 2 + 1, end, arr);
 
-	pair<int, int> left = getSegmentTree(start, (start + end) / 2, index * 2, tree, arr);
-	pair<int, int> right = getSegmentTree((start + end) / 2 + 1, end, index * 2 + 1, tree, arr);
+	ret->max = (left->max > right->max ? left->max : right->max);
+	ret->min = (left->min < right->min ? left->min : right->min);
+	ret->left = left;
+	ret->right = right;
 
-	tree[index].first = (left.first < right.first ? left.first : right.first);
-	tree[index].second = (left.second > right.second ? left.second : right.second);
-
-
-	return tree[index];
+	return ret;
 }
 
-pair<int, int> getMinMax(int left, int right, int start, int end, int index, pair<int, int>* tree)
+pair<int, int> getMinMax(int left, int right, int start, int end, node* root)
 {
 	int mid = (start + end) / 2;
 	pair<int, int> rightPair, ret;
@@ -99,15 +99,21 @@ pair<int, int> getMinMax(int left, int right, int start, int end, int index, pai
 	if (start > right || end < left)
 		return ret;
 	if (start >= left && end <= right)
-		return tree[index];
+	{
+		ret.first = root->min;
+		ret.second = root->max;
+
+		return ret;
+	}
 
 
 	if (left <= mid)
-		ret = getMinMax(left, right, start, mid, index * 2, tree);
+		ret = getMinMax(left, right, start, mid, root->left);
+
 
 	if (right > mid)
 	{
-		rightPair = getMinMax(left, right, mid + 1, end, index * 2 + 1, tree);
+		rightPair = getMinMax(left, right, mid + 1, end, root->right);
 
 		if (ret.first == -1)
 			ret = rightPair;
