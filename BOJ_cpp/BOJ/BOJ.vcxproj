@@ -73,12 +73,20 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <StackReserveSize>10485760</StackReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="10868 최솟값 CPP.cpp" />
+    <ClCompile Include="1725 히스토그램 CPP.cpp" />
     <ClCompile Include="2357 최솟값과 최댓값 CPP.cpp" />
+    <ClCompile Include="6549 히스토그램에서 가장 큰 직사각형 CPP.cpp" />
     <ClCompile Include="control.h" />
+    <ClCompile Include="myTree.cpp" />
     <ClCompile Include="templeat.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
