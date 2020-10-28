@@ -84,6 +84,7 @@
     <ClCompile Include="6549 히스토그램에서 가장 큰 직사각형 CPP.cpp" />
     <ClCompile Include="control.h" />
     <ClCompile Include="myTree.cpp" />
+    <ClCompile Include="temp.cpp" />
     <ClCompile Include="templeat.cpp" />
   </ItemGroup>
   <ItemGroup>
