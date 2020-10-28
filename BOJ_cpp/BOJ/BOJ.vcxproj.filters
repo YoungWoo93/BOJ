@@ -46,6 +46,9 @@
       <Filter>소스 파일\푼것</Filter>
     </ClCompile>
     <ClCompile Include="10942 팰린드롬 CPP.cpp">
+      <Filter>소스 파일\푼것</Filter>
+    </ClCompile>
+    <ClCompile Include="11405 책 구매하기 CPP.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

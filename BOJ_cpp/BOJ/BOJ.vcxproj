@@ -78,6 +78,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="10868 최솟값 CPP.cpp" />
+    <ClCompile Include="11405 책 구매하기 CPP.cpp" />
     <ClCompile Include="1395 스위치 CPP.cpp" />
     <ClCompile Include="1725 히스토그램 CPP.cpp" />
     <ClCompile Include="2357 최솟값과 최댓값 CPP.cpp" />
