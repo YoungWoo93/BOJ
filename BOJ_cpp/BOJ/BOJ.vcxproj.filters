@@ -45,9 +45,6 @@
     <ClCompile Include="10868 최솟값 CPP.cpp">
       <Filter>소스 파일\푼것</Filter>
     </ClCompile>
-    <ClCompile Include="temp.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myTree.h">
