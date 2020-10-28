@@ -85,6 +85,7 @@
     <ClCompile Include="control.h" />
     <ClCompile Include="myTree.cpp" />
     <ClCompile Include="templeat.cpp" />
+    <ClCompile Include="10942 팰린드롬 CPP.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myTree.h" />

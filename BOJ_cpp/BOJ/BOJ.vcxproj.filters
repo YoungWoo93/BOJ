@@ -30,9 +30,6 @@
     <ClCompile Include="myTree.cpp">
       <Filter>소스 파일\자료구조</Filter>
     </ClCompile>
-    <ClCompile Include="1395 스위치 CPP.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="1725 히스토그램 CPP.cpp">
       <Filter>소스 파일\푼것</Filter>
     </ClCompile>
@@ -44,6 +41,12 @@
     </ClCompile>
     <ClCompile Include="10868 최솟값 CPP.cpp">
       <Filter>소스 파일\푼것</Filter>
+    </ClCompile>
+    <ClCompile Include="1395 스위치 CPP.cpp">
+      <Filter>소스 파일\푼것</Filter>
+    </ClCompile>
+    <ClCompile Include="10942 팰린드롬 CPP.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

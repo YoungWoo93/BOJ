@@ -4,6 +4,6 @@
 //
 
 #ifdef 문제번호
-// 문제 url
+// url
 
 #endif
