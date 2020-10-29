@@ -51,6 +51,9 @@
     <ClCompile Include="11405 책 구매하기 CPP.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="18250 철도 여행 CPP.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="myTree.h">
