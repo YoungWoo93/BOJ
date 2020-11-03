@@ -58,6 +58,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="15919 사자는 여행왕이야 CPP.cpp">
+      <Filter>소스 파일\푼것</Filter>
+    </ClCompile>
+    <ClCompile Include="1826 연료채우기 CPP.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
