@@ -153,21 +153,6 @@ typedef struct node{
 	int enemyCount;
 }node;
 
-
-int check_in(vector<int>* memo, int index)
-{
-	return memo[inside][index];
-}
-int check_out(vector<int>* memo, int index)
-{
-	return memo[outside][index];
-}
-int check_inout(vector<int>* memo, int index)
-{
-	return memo[inout][index];
-}
-
-
 void input(int& partCount, int& memberCount, vector<node>* arr, vector<int>* memo);
 
 void setMemo(int index, vector<int>* memo, vector<node>* arr);
