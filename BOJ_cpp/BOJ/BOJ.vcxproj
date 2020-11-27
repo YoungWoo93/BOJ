@@ -86,6 +86,7 @@
     <ClCompile Include="1725 히스토그램 CPP.cpp" />
     <ClCompile Include="18250 철도 여행 CPP.cpp" />
     <ClCompile Include="1826 연료채우기 CPP.cpp" />
+    <ClCompile Include="2014 소수의 곱.cpp" />
     <ClCompile Include="2357 최솟값과 최댓값 CPP.cpp" />
     <ClCompile Include="6549 히스토그램에서 가장 큰 직사각형 CPP.cpp" />
     <ClCompile Include="control.h" />

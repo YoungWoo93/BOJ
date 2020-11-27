@@ -64,6 +64,9 @@
       <Filter>소스 파일\푼것</Filter>
     </ClCompile>
     <ClCompile Include="10266 시계 사진들.cpp">
+      <Filter>소스 파일\푼것</Filter>
+    </ClCompile>
+    <ClCompile Include="2014 소수의 곱.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
