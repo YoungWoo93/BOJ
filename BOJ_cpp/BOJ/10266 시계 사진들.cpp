@@ -14,6 +14,7 @@ using namespace std;
 
 void input(vector<int> &arr1, vector<int> &arr2);
 vector<int> getPi(vector<int> &arr);
+vector<int> getPi2(vector<int> &arr);
 bool kmp(vector<int> &clock1, vector<int> &clock2);
 
 int main()
@@ -50,20 +51,26 @@ void input(vector<int> &arr1, vector<int> &arr2)
 		arr2.push_back(temp % 360);
 	}
 
+	arr1.erase(unique(arr1.begin(), arr1.end()), arr1.end());
+	arr2.erase(unique(arr2.begin(), arr2.end()), arr2.end());
+
 	sort(arr1.begin(), arr1.end());
 	sort(arr2.begin(), arr2.end());
+
+
+
 
 	int temp1, temp2;
 	temp1 = arr1[0] - arr1[count - 1] + 360;
 	temp2 = arr2[0] - arr2[count - 1] + 360;
 
-	for (int i = count - 1; i > 0; i--)
+	for (int i = 0; i < count - 1; i++)
 	{
-		arr1[i] = arr1[i] - arr1[i - 1];
-		arr2[i] = arr2[i] - arr2[i - 1];
+		arr1[i] = arr1[i + 1] - arr1[i];
+		arr2[i] = arr2[i + 1] - arr2[i];
 	}
-	arr1[0] = temp1;
-	arr2[0] = temp2;
+	arr1[count - 1] = temp1;
+	arr2[count - 1] = temp2;
 
 	for (int i = 0; i < count; i++)
 		arr1.push_back(arr1[i]);
@@ -72,44 +79,46 @@ void input(vector<int> &arr1, vector<int> &arr2)
 
 vector<int> getPi(vector<int> &arr)
 {
-	vector<int> pi(arr.size(), 0);
-	int j = 0;
+	vector<int> pi;
+	int cur = 0;
+
+	pi.resize(arr.size());
 
 	for (int i = 1; i< arr.size(); i++)
 	{
-		while (j > 0 && arr[i] != arr[j])
+		while (cur != 0 && arr[i] != arr[cur])
 		{
-			j = pi[j - 1];
+			cur = pi[cur - 1];
 		}
 
-		if (arr[i] == arr[j])
-			pi[i] = ++j;
+		if (arr[i] == arr[cur])
+		{
+			pi[i] = cur + 1;
+			cur++;
+		}	
 	}
 	return pi;
 }
 
 
-
-
 bool kmp(vector<int> &clock1, vector<int> &clock2)
 {
 	vector<int> ans;
-	auto pi = getPi(clock1);
-	int n = clock2.size();
-	int m = clock1.size();
-	int j = 0;
+	vector<int> pi = getPi(clock1);
 
-	for (int i = 0; i < n; i++)
+	int cur = 0;
+
+	for (int i = 0; i < clock2.size(); i++)
 	{
-		while (j>0 && clock2[i] != clock1[j])
-			j = pi[j - 1];
+		while (cur != 0 && clock2[i] != clock1[cur])
+			cur = pi[cur - 1];
 
-		if (clock2[i] == clock1[j])
+		if (clock2[i] == clock1[cur])
 		{
-			if (j == m - 1)
+			if (cur == clock1.size() - 1)
 				return true;
 			else
-				j++;
+				cur++;
 		}
 	}
 
