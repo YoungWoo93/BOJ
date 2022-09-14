@@ -1,10 +1,15 @@
 #pragma once
+#define _CRT_SECURE_NO_WARNINGS
 #define _USE_MATH_DEFINES
 
 //#define _test_
 // _1423_
 
-#define _11375_
+#define _15650_//_1429_
+
+// _3193_ L,D 커맨드로 공 굴리기 문제, cin 시간초과 발생, 100ms 대 코드 분석필요
+
+//_11375_
 //_2342_
 // _2533_
 

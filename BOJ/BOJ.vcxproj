@@ -174,12 +174,14 @@
     <ClCompile Include="cpp\1389 케빈 베이컨의 6단계 법칙\1389.cpp" />
     <ClCompile Include="cpp\1423 원숭이 키우기\1423.cpp" />
     <ClCompile Include="cpp\14257 XOR 방정식\14257.cpp" />
+    <ClCompile Include="cpp\1429 결혼\1429.cpp" />
     <ClCompile Include="cpp\14500 테트로미노\14500.cpp" />
     <ClCompile Include="cpp\1463 1로 만들기\1463.cpp" />
     <ClCompile Include="cpp\14890 경사로\14890.cpp" />
     <ClCompile Include="cpp\14939 불 끄기\14939.cpp" />
     <ClCompile Include="cpp\1504 특정한 최단 경로\1504.cpp" />
     <ClCompile Include="cpp\1509 팰린드롬 분할\1509.cpp" />
+    <ClCompile Include="cpp\15650 N과 M(2)\15650.cpp" />
     <ClCompile Include="cpp\15711 환상의 짝꿍\15711.cpp" />
     <ClCompile Include="cpp\1577 도로의 개수\1577.cpp" />
     <ClCompile Include="cpp\16120 PPAP\16120.cpp" />
@@ -227,6 +229,7 @@
     <ClCompile Include="cpp\2533 사회망 서비스(SNS)\2533.cpp" />
     <ClCompile Include="cpp\2565 전깃줄\2565.cpp" />
     <ClCompile Include="cpp\2623 음악프로그램\2623.cpp" />
+    <ClCompile Include="cpp\3193 공\3193.cpp" />
     <ClCompile Include="cpp\4948 베르트랑 공준\4948.cpp" />
     <ClCompile Include="cpp\5021 왕위 계승\5021.cpp" />
     <ClCompile Include="cpp\5430 AC\5430.cpp" />
