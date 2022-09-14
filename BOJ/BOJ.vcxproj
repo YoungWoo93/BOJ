@@ -167,6 +167,7 @@
     <ClCompile Include="cpp\1229 육각수\1229.cpp" />
     <ClCompile Include="cpp\1238 파티\1238.cpp" />
     <ClCompile Include="cpp\1260 DFS와 BFS\1260.cpp" />
+    <ClCompile Include="cpp\12850 본대 산책2\12850.cpp" />
     <ClCompile Include="cpp\13141 Ignition\13141.cpp" />
     <ClCompile Include="cpp\13334 철로\13334.cpp" />
     <ClCompile Include="cpp\1339 단어 수학\1339.cpp" />
@@ -185,6 +186,7 @@
     <ClCompile Include="cpp\15711 환상의 짝꿍\15711.cpp" />
     <ClCompile Include="cpp\1577 도로의 개수\1577.cpp" />
     <ClCompile Include="cpp\16120 PPAP\16120.cpp" />
+    <ClCompile Include="cpp\16236 아기 상어\16236.cpp" />
     <ClCompile Include="cpp\1644 소수의 연속합\1644.cpp" />
     <ClCompile Include="cpp\1655 가운데를 말해요\1655.cpp" />
     <ClCompile Include="cpp\16724 피리 부는 사나이\16724.cpp" />

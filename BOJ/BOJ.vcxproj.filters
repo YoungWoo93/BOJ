@@ -317,5 +317,11 @@
     <ClCompile Include="cpp\15650 N과 M(2)\15650.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="cpp\16236 아기 상어\16236.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\12850 본대 산책2\12850.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
