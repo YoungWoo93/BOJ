@@ -323,5 +323,38 @@
     <ClCompile Include="cpp\12850 본대 산책2\12850.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="cpp\11726 2xn 타일\11726.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\11053 가장 긴 증가하는 부분 수열\11053.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\12851 숨바꼭질 2\12851.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\17143 낚시왕\17143.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\13257 생태학\13257.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\2877 4와 7\2877.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\14722 우유 도시\14722.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\11403 경로찾기\11403.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\15657 N과 M%288%29\15657.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\16566 카드게임\16566.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\11725 트리의 부모 찾기\11725.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

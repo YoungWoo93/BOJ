@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -156,11 +156,15 @@
     <ClCompile Include="cpp\10815 숫자 카드\10815.cpp" />
     <ClCompile Include="cpp\10818 최소, 최대\10818.cpp" />
     <ClCompile Include="cpp\11049 행렬 곱셈 순서\11049.cpp" />
+    <ClCompile Include="cpp\11053 가장 긴 증가하는 부분 수열\11053.cpp" />
     <ClCompile Include="cpp\11054 가장 긴 바이토닉 부분 수열\11054.cpp" />
     <ClCompile Include="cpp\11057 오르막 수\11057.cpp" />
     <ClCompile Include="cpp\1111 IQ Test\1111.cpp" />
     <ClCompile Include="cpp\1114 통나무 자르기\1114.cpp" />
     <ClCompile Include="cpp\11375 열혈강호\11375.cpp" />
+    <ClCompile Include="cpp\11403 경로찾기\11403.cpp" />
+    <ClCompile Include="cpp\11725 트리의 부모 찾기\11725.cpp" />
+    <ClCompile Include="cpp\11726 2xn 타일\11726.cpp" />
     <ClCompile Include="cpp\11779 최소비용 구하기 2\11779.cpp" />
     <ClCompile Include="cpp\1202 보석 도둑\1202.cpp" />
     <ClCompile Include="cpp\1219 오민식의 고민\1219.cpp" />
@@ -168,7 +172,9 @@
     <ClCompile Include="cpp\1238 파티\1238.cpp" />
     <ClCompile Include="cpp\1260 DFS와 BFS\1260.cpp" />
     <ClCompile Include="cpp\12850 본대 산책2\12850.cpp" />
+    <ClCompile Include="cpp\12851 숨바꼭질 2\12851.cpp" />
     <ClCompile Include="cpp\13141 Ignition\13141.cpp" />
+    <ClCompile Include="cpp\13257 생태학\13257.cpp" />
     <ClCompile Include="cpp\13334 철로\13334.cpp" />
     <ClCompile Include="cpp\1339 단어 수학\1339.cpp" />
     <ClCompile Include="cpp\13460 구슬 탈출 2\13460.cpp" />
@@ -178,22 +184,26 @@
     <ClCompile Include="cpp\1429 결혼\1429.cpp" />
     <ClCompile Include="cpp\14500 테트로미노\14500.cpp" />
     <ClCompile Include="cpp\1463 1로 만들기\1463.cpp" />
+    <ClCompile Include="cpp\14722 우유 도시\14722.cpp" />
     <ClCompile Include="cpp\14890 경사로\14890.cpp" />
     <ClCompile Include="cpp\14939 불 끄기\14939.cpp" />
     <ClCompile Include="cpp\1504 특정한 최단 경로\1504.cpp" />
     <ClCompile Include="cpp\1509 팰린드롬 분할\1509.cpp" />
     <ClCompile Include="cpp\15650 N과 M(2)\15650.cpp" />
+    <ClCompile Include="cpp\15657 N과 M%288%29\15657.cpp" />
     <ClCompile Include="cpp\15711 환상의 짝꿍\15711.cpp" />
     <ClCompile Include="cpp\1577 도로의 개수\1577.cpp" />
     <ClCompile Include="cpp\16120 PPAP\16120.cpp" />
     <ClCompile Include="cpp\16236 아기 상어\16236.cpp" />
     <ClCompile Include="cpp\1644 소수의 연속합\1644.cpp" />
     <ClCompile Include="cpp\1655 가운데를 말해요\1655.cpp" />
+    <ClCompile Include="cpp\16566 카드게임\16566.cpp" />
     <ClCompile Include="cpp\16724 피리 부는 사나이\16724.cpp" />
     <ClCompile Include="cpp\16946 벽 부수고 이동하기 4\16946.cpp" />
     <ClCompile Include="cpp\16964 DFS 스페셜 저지\16964.cpp" />
     <ClCompile Include="cpp\1697 숨바꼭질\1697.cpp" />
     <ClCompile Include="cpp\1708 볼록 껍질\1708.cpp" />
+    <ClCompile Include="cpp\17143 낚시왕\17143.cpp" />
     <ClCompile Include="cpp\17144 미세먼지 안녕!\17144.cpp" />
     <ClCompile Include="cpp\1715 카드 정렬하기\1715.cpp" />
     <ClCompile Include="cpp\1717 집합의 표현\1717.cpp" />
@@ -231,6 +241,7 @@
     <ClCompile Include="cpp\2533 사회망 서비스(SNS)\2533.cpp" />
     <ClCompile Include="cpp\2565 전깃줄\2565.cpp" />
     <ClCompile Include="cpp\2623 음악프로그램\2623.cpp" />
+    <ClCompile Include="cpp\2877 4와 7\2877.cpp" />
     <ClCompile Include="cpp\3193 공\3193.cpp" />
     <ClCompile Include="cpp\4948 베르트랑 공준\4948.cpp" />
     <ClCompile Include="cpp\5021 왕위 계승\5021.cpp" />
